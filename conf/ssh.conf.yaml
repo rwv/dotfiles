@@ -1,7 +1,7 @@
 - clean: ['~/.ssh']
 
 - link:
-  ~/.ssh/authorized_keys:
-    create: true
-    force: true
-    path: .ssh/authorized_keys
+    ~/.ssh/authorized_keys:
+      create: true
+      force: true
+      path: .ssh/authorized_keys
