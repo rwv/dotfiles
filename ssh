@@ -2,7 +2,7 @@
 
 set -e
 
-CONFIG="conf/ssh.conf.yaml"
+CONFIG="conf/dotbot/ssh.conf.yaml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
