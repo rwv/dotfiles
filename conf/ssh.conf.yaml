@@ -3,4 +3,5 @@
 - link:
   ~/.ssh/authorized_keys:
     create: true
+    force: true
     path: .ssh/authorized_keys
