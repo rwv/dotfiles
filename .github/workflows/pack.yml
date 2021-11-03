@@ -13,8 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Tar and encrypt
+        run: tar -czvf - -C ../ ./dotfiles | openssl des3 -salt -k password -out dotfiles.tar.gz
+
+      - uses: actions/upload-artifact@v2
+        name: Upload to artifact
+        with:
+          name: dotfiles.tar.gz
+          path: dotfiles.tar.gz
 
       - name: Run a multi-line script
         run: |
