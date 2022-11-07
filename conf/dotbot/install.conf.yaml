@@ -10,5 +10,3 @@
   - [chsh -s $(which zsh), Making zsh the default shell]
   - [THEME="ys"; sed -i s/^ZSH_THEME=".\+"$/ZSH_THEME=\"$THEME\"/g ~/.zshrc, Change zsh theme to ys]
   - [sh -c "$(curl -fsSL https://get.docker.com)", Installing Docker]
-  - [curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose, Install docker-compose]
-  - chmod +x /usr/local/bin/docker-compose
